@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.buttons > #pen {
+  transition: 500ms;
+}
+
+.buttons > #cart {
+  transition: 500ms;
+}
+
+.buttons > #pen:hover {
+  transform: scale(1.5);
+}
+
+.buttons > #cart:hover {
+  transform: scale(1.2);
+}
+
+.card,
+.card2 {
+  transition: 500ms;
+}
+
+.card:hover,
+.card2:hover {
+  transform: scale(1.2);
+}
+
+.buttons > #alarm :hover {
+  -webkit-animation: shake 0.1s ease-in-out 0.1s infinite alternate;
+}
+
+@-webkit-keyframes shake {
+  from {
+    -webkit-transform: rotate(10deg);
+  }
+  to {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-10deg);
+  }
+}
+
+.plusbutton {
+  transition: 500ms;
+}
+
+.plusbutton:hover {
+  transform: translateY(-10px) scale(1.1);
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper {
+  padding-right: 40px;
+  padding-top: 27px;
+  padding-left: 38px;
+  min-height: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card2 {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 346px;
+  width: 329px;
+
+  background: #efefef;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.card {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 346px;
+  width: 329px;
+
+  background: #e4ffe7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #000000;
+}
+
+.para {
+  margin-top: 10px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 77px;
+  background: white;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.plusbutton {
+  margin-bottom: 70px;
+  margin-right: 32px;
+  margin-left: auto;
+}
